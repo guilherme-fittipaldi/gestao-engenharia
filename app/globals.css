@@ -1,0 +1,110 @@
+@import 'tailwindcss';
+@import 'tw-animate-css';
+@import 'shadcn/tailwind.css';
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --font-sans: var(--font-inter), 'Inter Fallback', sans-serif;
+  --font-heading: var(--font-montserrat), 'Montserrat Fallback', sans-serif;
+  --font-mono: var(--font-geist-mono), 'Geist Mono Fallback';
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+
+  --color-navy: var(--navy);
+  --color-navy-deep: var(--navy-deep);
+  --color-teal: var(--teal);
+
+  --radius-sm: calc(var(--radius) * 0.6);
+  --radius-md: calc(var(--radius) * 0.8);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) * 1.4);
+  --radius-2xl: calc(var(--radius) * 1.8);
+}
+
+:root {
+  color-scheme: dark;
+
+  /* Deep corporate navy palette */
+  --navy-deep: oklch(0.18 0.045 256);
+  --navy: oklch(0.24 0.05 256);
+  /* Cyan -> green-teal accent */
+  --teal: oklch(0.82 0.15 188);
+
+  --background: oklch(0.16 0.042 256);
+  --foreground: oklch(0.97 0.005 240);
+
+  --card: oklch(0.22 0.048 256);
+  --card-foreground: oklch(0.97 0.005 240);
+
+  --popover: oklch(0.2 0.048 256);
+  --popover-foreground: oklch(0.97 0.005 240);
+
+  --primary: oklch(0.82 0.15 188);
+  --primary-foreground: oklch(0.18 0.05 256);
+
+  --secondary: oklch(0.28 0.05 256);
+  --secondary-foreground: oklch(0.97 0.005 240);
+
+  --muted: oklch(0.28 0.045 256);
+  --muted-foreground: oklch(0.72 0.025 245);
+
+  --accent: oklch(0.82 0.15 188);
+  --accent-foreground: oklch(0.18 0.05 256);
+
+  --destructive: oklch(0.62 0.21 25);
+
+  --border: oklch(0.4 0.05 250 / 28%);
+  --input: oklch(0.4 0.05 250 / 35%);
+  --ring: oklch(0.82 0.15 188);
+
+  --radius: 0.625rem;
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+  html {
+    @apply font-sans;
+  }
+}
+
+@utility text-gradient-teal {
+  background-image: linear-gradient(
+    100deg,
+    oklch(0.88 0.16 165),
+    oklch(0.78 0.14 205)
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+@utility bg-gradient-teal {
+  background-image: linear-gradient(
+    120deg,
+    oklch(0.86 0.16 165),
+    oklch(0.76 0.14 210)
+  );
+}

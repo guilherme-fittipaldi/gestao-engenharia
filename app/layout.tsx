@@ -1,11 +1,12 @@
 import { Analytics } from '@vercel/analytics/next'
 import type { Metadata, Viewport } from 'next'
-import { Inter, Montserrat, Geist_Mono } from 'next/font/google'
+import { Montserrat, Geist_Mono, Atkinson_Hyperlegible} from 'next/font/google'
 import './globals.css'
 
-const inter = Inter({
-  variable: '--font-inter',
+const atkinson = Atkinson_Hyperlegible({
+  variable: '--font-atkinson',
   subsets: ['latin'],
+  weight: ['400', '700'],
   display: 'swap',
 })
 
@@ -52,9 +53,9 @@ export default function RootLayout({
   return (
     <html
       lang="pt-BR"
-      className={`${inter.variable} ${montserrat.variable} ${geistMono.variable} bg-background`}
+      className={`${atkinson.variable} ${montserrat.variable} ${geistMono.variable} bg-background`}
     >
-      <body className="font-sans antialiased">
+      <body className="font-sans antialiased" style={{ fontFamily: 'var(--font-atkinson)' }}>
         {children}
         {process.env.NODE_ENV === 'production' && <Analytics />}
       </body>

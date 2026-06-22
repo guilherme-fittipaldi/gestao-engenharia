@@ -5,7 +5,7 @@ const clients = [
   "/images/bradesco.png",
   "/images/mercado-livre.png",
   "/images/caixa.png",
-  "/images/FHE.jpeg",
+  "/images/FHE.png",
   "/images/santander.png",
   "/images/TJSP.png",
 ];

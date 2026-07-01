@@ -32,9 +32,9 @@ export function SiteHeader() {
           ? "border-b border-border/60 bg-background/85 backdrop-blur-md"
           : "bg-transparent",
       )}>
-      <div className="mx-auto flex h-18 max-w-7xl items-center justify-between gap-4 px-4 py-3 sm:px-6 lg:px-8">
+      <div className="mx-auto flex h-18 max-w-7xl items-center justify-between gap-4 px-4 py-3 sm:px-6 lg:px-8 sm:h-20">
         <a href="#topo" aria-label="Gestão Engenharia - início">
-          <Logo className="h-14 w-auto" />
+          <Logo className="h-12 w-auto sm:h-14 2xl:h-16" />
         </a>
 
         <nav className="hidden items-center gap-8 lg:flex">

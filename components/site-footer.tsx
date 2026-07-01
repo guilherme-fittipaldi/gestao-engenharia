@@ -59,9 +59,9 @@ export function SiteFooter() {
                 </a>
               </li>
               <li>
-                <a href="mailto:gestaoengenharia.arq@gmail.com" className="flex items-center gap-2.5 break-all transition-colors hover:text-primary">
+                <a href="mailto:comercial@gestaoengenhariaoficial.com.br" className="flex items-center gap-2.5 break-all transition-colors hover:text-primary">
                   <Mail className="size-4 shrink-0 text-primary" aria-hidden="true" />
-                  gestaoengenharia.arq@gmail.com
+                  comercial@gestaoengenhariaoficial.com.br
                 </a>
               </li>
               {/* <li>

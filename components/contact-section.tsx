@@ -21,7 +21,7 @@ const services = [
 const contacts = [
   { icon: Phone, label: '(11) 91307-8121', href: 'tel:+5511913078121' },
   { icon: MessageCircle, label: '(13) 99155-5054 (WhatsApp)', href: 'https://wa.me/5511913078121' },
-  { icon: Mail, label: 'gestaoengenharia.arq@gmail.com', href: 'mailto:gestaoengenharia.arq@gmail.com' },
+  { icon: Mail, label: 'comercial@gestaoengenhariaoficial.com.br', href: 'mailto:comercial@gestaoengenhariaoficial.com.br' },
   { icon: Globe, label: 'www.gestaoengenhariaoficial.com.br', href: 'https://www.gestaoengenhariaoficial.com.br' },
   { icon: AtSign, label: '@gestaoengenharia', href: 'https://instagram.com/gestaoengenharia' },
 ]

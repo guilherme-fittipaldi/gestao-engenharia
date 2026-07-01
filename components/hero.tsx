@@ -20,8 +20,8 @@ export function Hero() {
           aria-hidden="true"
           className="size-full object-cover opacity-35"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-navy-deep via-navy-deep/95 to-navy-deep/55" />
-        <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent" />
+        <div className="absolute inset-0 bg-linear-to-r from-navy-deep via-navy-deep/95 to-navy-deep/55" />
+        <div className="absolute inset-0 bg-linear-to-r from-background via-transparent to-transparent" />
       </div>
 
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -30,7 +30,7 @@ export function Hero() {
             Engenharia & Arquitetura
           </span>
 
-          <h1 className="mt-6 text-balance font-heading text-4xl font-extrabold leading-[1.05] tracking-tight text-foreground sm:text-5xl lg:text-6xl">
+          <h1 className="mt-6 text-balance font-heading text-4xl font-extrabold leading-[1.05] tracking-tight text-foreground sm:text-4xl lg:text-5xl">
             Rigor técnico, confiança e criatividade a serviço do{' '}
             <span className="text-gradient-teal">seu projeto</span>
           </h1>

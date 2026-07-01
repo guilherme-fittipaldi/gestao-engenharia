@@ -34,7 +34,7 @@ export function SiteHeader() {
       )}>
       <div className="mx-auto flex h-18 max-w-7xl items-center justify-between gap-4 px-4 py-3 sm:px-6 lg:px-8">
         <a href="#topo" aria-label="Gestão Engenharia - início">
-          <Logo className="h-12 w-auto" />
+          <Logo className="h-14 w-auto" />
         </a>
 
         <nav className="hidden items-center gap-8 lg:flex">
